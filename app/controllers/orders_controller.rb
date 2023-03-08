@@ -2,6 +2,11 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @line_items = LineItem.where(order_id: @order.id)
+    product_ids = @line_items.pluck(:product_id).uniq 
+    @products = Product.where(id: product_ids)
+    @product_map = @products.index_by(&:id)
+    
   end
 
   def create
@@ -55,5 +60,12 @@ class OrdersController < ApplicationController
     order.save!
     order
   end
+
+  def get_order_items
+    id = @order.id
+    @order_items = line_items.where("order_id = #{id}")
+
+  end
+
 
 end
