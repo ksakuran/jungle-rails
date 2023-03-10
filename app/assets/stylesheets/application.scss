@@ -112,10 +112,9 @@ form.button_to {
   color: #f38792 !important;
 }
 
-i.fa-leaf {
-  color: black;
-}
-
-i.fa-clipboard {
-  color:black;
+.text-user {
+  
+  display: flex;
+  flex-direction: row;
+  align-self: center;
 }
