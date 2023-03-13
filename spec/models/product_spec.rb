@@ -9,7 +9,7 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   describe 'Validations' do
 
-    it 'passes validation' do
+    it 'passes validation when given valid input' do
       category = Category.new(name: 'test')
       product = Product.new(name: 'test product', price: 500, quantity: 5, category: category)
       expect(product).to be_valid
