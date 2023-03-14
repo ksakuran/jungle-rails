@@ -1,6 +1,6 @@
-describe('product details', () => {
-  it('should visit the home page successfully', () => {
-    cy.visit('http://localhost:3000/')
+describe("product details", () => {
+  it("should visit the home page successfully", () => {
+    cy.visit("http://localhost:3000/");
   });
 
   it("shows products on the page", () => {
@@ -16,5 +16,4 @@ describe('product details', () => {
     cy.url().should("include", "/products/2");
     cy.get(".product-detail").should("be.visible");
   });
-
-})
+});
