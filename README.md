@@ -3,13 +3,13 @@
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
 ## Home Page
-![home]() 
+![home](https://github.com/ksakuran/jungle-rails/blob/master/public/images/home.png) 
 
 ## Plants Selection
-![plants]()
+![plants](https://github.com/ksakuran/jungle-rails/blob/master/public/images/products.png)
 
 ## My Cart
-![cart]() 
+![cart](https://github.com/ksakuran/jungle-rails/blob/master/public/images/cart.png) 
 
 ## Setup
 
